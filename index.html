@@ -2,6 +2,7 @@
 
 <head>
   <script src="scripts/date.js" type="text/javascript"></script>
+  <script src="scripts/navigate.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="style/main.css" />
 </head>
 
@@ -9,11 +10,11 @@
   <header>Super awesome startup page</header>
   <nav>
     <ul>
-      <li class="focus"><a href="#news">News</a></li>
-      <li><a href="#multimedia">Multimédia</a></li>
-      <li><a href="#selfhosted">Selfhosted</a></li>
-      <li><a href="#openclassrooms">OpenClassrooms</a></li>
-      <li><a href="#misc">Misc</a></li>
+      <li id="li_news" class="focus"><a href="#news" onclick="changePage('news')">News</a></li>
+      <li id="li_multimedia"><a href="#multimedia" onclick="changePage('multimedia')">Multimédia</a></li>
+      <li id="li_selfhosted"><a href="#selfhosted" onclick="changePage('selfhosted')">Selfhosted</a></li>
+      <li id="li_openclassrooms"><a href="#openclassrooms" onclick="changePage('openclassrooms')">OpenClassrooms</a></li>
+      <li id="li_misc"><a href="#misc" onclick="changePage('misc')">Misc</a></li>
     </ul>
   </nav>
 
@@ -34,7 +35,8 @@
       </section>
 
       <section id="selfhosted" style="display: none">
-        <h3>Selfhosted</h3>
+        <h3>LAN</h3>
+        <h3>VPS</h3>
       </section>
 
       <section id="openclassrooms" style="display: none">
