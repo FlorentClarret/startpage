@@ -127,7 +127,12 @@ section.description {
   color: #00a;
 }
 
-section.description span {
+section.description p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+section.description p span.value {
   color: #555555;
 }
 
