@@ -1,10 +1,11 @@
 <html>
 
 <head>
+  <script src="scripts/date.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="style/main.css" />
 </head>
 
-<body>
+<body onload="updateDateAndTime()">
   <header>Super awesome startup page</header>
   <nav>
     <ul>
@@ -50,8 +51,8 @@
     <section class="description">
       <h3>Information</h3>
       <p><span class="label">System Name</span> [<span class="value">Dana</span>]</p>
-      <p><span class="label">System Date</span> [<span class="value" id="date">03/00/2020</span>]</p>
-      <p><span class="label">System Time</span> [<span class="value" id="time">15:18</span>]</p>
+      <p><span class="label">System Date</span> [<span class="value" id="date"></span>]</p>
+      <p><span class="label">System Time</span> [<span class="value" id="time"></span>]</p>
     </section>
   </main>
 
