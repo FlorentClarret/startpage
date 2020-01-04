@@ -1,4 +1,4 @@
-const pages = ["news", "multimedia", "selfhosted", "openclassrooms", "misc"];
+const pages = ["news", "multimedia", "socials", "selfhosted", "schools", "misc"];
 currentPage = "news";
 currentLink = -1;
 

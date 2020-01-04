@@ -81,6 +81,8 @@ main {
 section h3 {
   color: #00a;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 section.content {

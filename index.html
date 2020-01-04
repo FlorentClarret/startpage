@@ -4,6 +4,7 @@
   <title>Startup page</title>
   <script src="scripts/date.js" type="text/javascript"></script>
   <script src="scripts/navigate.js" type="text/javascript"></script>
+  <script src="scripts/hostname.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="style/main.css" />
   <link rel="icon" type="image/png" href="images/icons8-bios-24.png" />
 </head>
@@ -14,8 +15,9 @@
     <ul>
       <li id="li_news" class="focus"><a href="#news" onclick="changePage('news')">News</a></li>
       <li id="li_multimedia"><a href="#multimedia" onclick="changePage('multimedia')">Multimédia</a></li>
+      <li id="li_socials"><a href="#socials" onclick="changePage('socials')">Réseaux sociaux</a></li>
       <li id="li_selfhosted"><a href="#selfhosted" onclick="changePage('selfhosted')">Selfhosted</a></li>
-      <li id="li_openclassrooms"><a href="#openclassrooms" onclick="changePage('openclassrooms')">OpenClassrooms</a></li>
+      <li id="li_schools"><a href="#" onclick="changePage('schools')">Schools</a></li>
       <li id="li_misc"><a href="#misc" onclick="changePage('misc')">Misc</a></li>
     </ul>
   </nav>
@@ -36,18 +38,30 @@
         <a href="https://www.youtube.com/" title="Got to Youtube">Youtube <span>https://www.youtube.com/</span></a>
       </section>
 
+      <section id="socials" style="display: none">
+        <h3>Réseaux sociaux</h3>
+        <a href="https://twitter.com/" title="Got to Twitter">Twitter <span>https://twitter.com/</span></a>
+        <a href="https://discordapp.com/app" title="Got to Discord">Discord <span>https://discordapp.com/app</span></a>
+        <a href="https://www.linkedin.com/" title="Got to LinkedIn">LinkedIn <span>https://www.linkedin.com/</span></a>
+        <a href="https://www.monster.fr/" title="Got to Monster">Monster <span>https://www.monster.fr/</span></a>
+      </section>
+
       <section id="selfhosted" style="display: none">
         <h3>Localhost</h3>
 
         <h3>NAS</h3>
 
         <h3>VPS</h3>
-
       </section>
 
-      <section id="openclassrooms" style="display: none">
+      <section id="schools" style="display: none">
         <h3>OpenClassrooms</h3>
         <a href="https://openclassrooms.com/" title="Got to OpenClassrooms">OpenClassrooms <span>https://openclassrooms.com/</span></a>
+        <a href="https://fr.surveymonkey.com/r/MPH8GZV" title="Got to SurveyMonkey">SurveyMonkey <span>https://fr.surveymonkey.com/r/MPH8GZV</span></a>
+        <a href="https://zoom.us/" title="Got to Zoom">Zoom <span>https://zoom.us/</span></a>
+
+        <h3>Polytech</h3>
+        <a href="https://celene.univ-tours.fr/my/" title="Got to Celene">Celene <span>https://celene.univ-tours.fr/my/</span></a>
       </section>
 
       <section id="misc" style="display: none">
@@ -58,7 +72,6 @@
 
     <section class="description">
       <h3>Information</h3>
-      <p><span class="label">System Name</span> [<span class="value">Dana</span>]</p>
       <p><span class="label">System Date</span> [<span class="value" id="date"></span>]</p>
       <p><span class="label">System Time</span> [<span class="value" id="time"></span>]</p>
     </section>
