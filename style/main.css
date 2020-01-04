@@ -11,7 +11,7 @@ body, html {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 100fr 1fr;
-  grid-template-rows: 1fr 1fr 100fr 1fr;
+  grid-template-rows: 0fr 1fr 100fr 1fr;
 }
 
 :focus {
@@ -82,7 +82,7 @@ section h3 {
   color: #00a;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 section.content {
